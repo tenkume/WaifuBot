@@ -61,7 +61,7 @@ SUP_BUTTONS = [
         Button.url("ʀᴇᴘᴏ", url="https://github.com/fnixdev/WaifuBot"),
         Button.url("ᴀᴅᴅᴏɴs", url="https://github.com/fnixdev/WaifuAddons"),
     ],
-    [Button.url("sᴜᴘᴏʀᴛᴇ", url="t.me/fnixdev")],
+    [Button.url("sᴜᴘᴏʀᴛᴇ", url="t.me/waifusu")],
 ]
 
 # --------------------BUTTONS--------------------#
@@ -109,7 +109,6 @@ async def inline_handler(event):
         file=_file_to_replace,
         link_preview=False,
         text=get_string("inline_4").format(
-            OWNER_NAME,
             len(PLUGINS),
             len(ADDONS),
             len(z),
@@ -147,7 +146,6 @@ async def setting(event):
     cmd = len(z)
     await event.edit(
         get_string("inline_4").format(
-            OWNER_NAME,
             len(PLUGINS),
             len(ADDONS),
             cmd,
@@ -156,12 +154,12 @@ async def setting(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("•Pɪɴɢ•", data="pkng"),
-                Button.inline("•Uᴘᴛɪᴍᴇ•", data="upp"),
+                Button.inline("ᴘɪɴɢ", data="pkng"),
+                Button.inline("ᴜᴘᴛɪᴍᴇ", data="upp"),
             ],
             [
-                Button.inline("•Rᴇsᴛᴀʀᴛ•", data="rstrt"),
-                Button.inline("•Uᴘᴅᴀᴛᴇ•", data="doupdate"),
+                Button.inline("ʀᴇɪɴɪᴄɪᴀʀ", data="rstrt"),
+                Button.inline("ᴀᴛᴜᴀʟɪᴢᴀʀ", data="doupdate"),
             ],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="open")],
         ],
@@ -398,7 +396,6 @@ async def opner(event):
             z.append(y)
     await event.edit(
         get_string("inline_4").format(
-            OWNER_NAME,
             len(PLUGINS),
             len(ADDONS),
             len(z),
