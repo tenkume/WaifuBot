@@ -35,7 +35,7 @@ if C_PIC:
     _file_to_replace = C_PIC
     TLINK = C_PIC
 else:
-    _file_to_replace = "resources/extras/help.gif"
+    _file_to_replace = "https://telegra.ph/file/da38b78461743fd9296d8.mp4"
 # ============================================#
 
 
