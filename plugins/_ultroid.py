@@ -8,7 +8,7 @@ from telethon.errors.rpcerrorlist import BotMethodInvalidError as bmi
 from . import *
 
 REPOMSG = """
-• **Waifu UserbotT** •\n
+• **Waifu Userbot** •\n
 • Repo - [Clique Aqui](https://github.com/fnixdev/WaifuBot)
 • Addons - [Clique Aqui](https://github.com/fnixdev/WaifuAddons)
 • Suporte - @fnixdev
