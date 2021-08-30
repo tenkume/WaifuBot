@@ -20,9 +20,9 @@ autopic_2: "Nenhum resultado encontrado para `{}`"
 autopic_3: "Tenho uma coleção `{}` relacionado à sua pesquisa !\nIniciando Autopic !"
 
 # inline
-inline_1: "[sᴜᴘᴏʀᴛᴇ ᴋᴀɴɴᴀ](t.me/waifusu)\n\n**Menu De Ajuda {}.\n\nPʟᴜɢɪɴs ~ {}**"
-inline_2: "[sᴜᴘᴏʀᴛᴇ ᴋᴀɴɴᴀ](t.me/waifusu)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}**"
-inline_3: "[sᴜᴘᴏʀᴛᴇ ᴋᴀɴɴᴀ](t.me/waifusu)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}\n\nDefina **`.setredis Extensões para True`** e REINICIE PARA OBTER EXTENSÕES.**"
+inline_1: "[sᴜᴘᴏʀᴛᴇ ᴡᴀɪꜰᴜ](t.me/waifusu)\n\n**Menu De Ajuda {}.\n\nPʟᴜɢɪɴs ~ {}**"
+inline_2: "[sᴜᴘᴏʀᴛᴇ ᴡᴀɪꜰᴜ](t.me/waifusu)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}**"
+inline_3: "[sᴜᴘᴏʀᴛᴇ ᴡᴀɪꜰᴜ](t.me/waifusu)\n\n**Mᴇɴᴜ Dᴇ Ajuda {}.\n\nExtensões ~ {}\n\nDefina **`.setredis Extensões para True`** e REINICIE PARA OBTER EXTENSÕES.**"
 inline_4: "**ᴍᴇɴᴜ ᴘʀɪɴᴄɪᴘᴀʟ\n\nᴘʟᴜɢɪɴs [{}] ~ ᴀᴅᴅᴏɴs [{}]\nᴛᴏᴛᴀʟ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏs [{}]**"
 inline_5: "**ᴍᴇɴᴜ ꜰᴇᴄʜᴀᴅᴏ**"
 

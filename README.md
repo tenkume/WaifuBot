@@ -24,4 +24,4 @@
 ## Session String
 Gerador de `SESSION`:
 
-* [![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://replit.com/@fnixdev/WaifuStringSessionhttps://replit.com/@fnixdev/StringSessionWB)
+* [![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://replit.com/@fnixdev/StringSessionWB)
