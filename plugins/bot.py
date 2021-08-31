@@ -9,7 +9,7 @@
     Check if your bot is working.
 
 • `{i}ping`
-    Check Ultroid's response time.
+    Check Waifu's response time.
 
 • `{i}cmds`
     View all plugin names.

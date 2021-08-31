@@ -10,7 +10,7 @@ import os
 
 a = r"""
 ===========================================
-|             VERSION v1.0.0              |
+|             VERSION v1.0.1              |
 |              By: @fnixdev               |
 |          (C) 2021 - WaifuBot            |
 ===========================================
@@ -23,15 +23,15 @@ def start():
     check_for_py()
 
     print(f"{a}\n\n")
-    print("Welcome to Ultroid, lets start setting up!\n\n")
+    print("Welcome to Waifu, lets start setting up!\n\n")
     print("Cloning the repository...\n\n")
     try:
-        os.system("rm -rf Ultroid")
+        os.system("rm -rf WaifuBot")
     except BaseException:
         pass
     os.system("git clone https://github.com/fnixdev/WaifuBot")
     print("\n\nDone")
-    os.chdir("Ultroid")
+    os.chdir("WaifuBot")
     clear_screen()
     print(a)
     print("\n\nLet's start!\n")
@@ -59,7 +59,7 @@ def start():
         "REDIS_URI",
         "REDIS_PASSWORD",
     ]
-    all_done = "# Ultroid Environment Variables.\n# Do not delete this file.\n\n"
+    all_done = "# WaifuBot Environment Variables.\n# Do not delete this file.\n\n"
     for i in varrs:
         all_done += do_input(i)
     clear_screen()

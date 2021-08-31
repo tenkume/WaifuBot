@@ -1,9 +1,7 @@
-// Ultroid - UserBot
-// Copyright (C) 2020 TeamUltroid
+// WaifuBot - UserBot
+// All Rights @TeamUltroid < https://github.com/TeamUltroid/Ultroid/ >
 //
-// This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-// PLease read the GNU Affero General Public License in
-// <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+// Editado por @fnixdev
 
 'use-strict';
 sgrywryhio

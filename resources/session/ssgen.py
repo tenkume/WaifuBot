@@ -8,12 +8,11 @@ import os
 from time import sleep
 
 a = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
+===========================================
+|             VERSION v1.0.1              |
+|              By: @fnixdev               |
+|          (C) 2021 - WaifuBot            |
+===========================================
 """
 
 
@@ -75,10 +74,10 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as ultroid:
-            print("Gerando uma sessão de usuário para KanaBot...")
+            print("Gerando uma sessï¿½o de usuï¿½rio para KanaBot...")
             ult = ultroid.send_message(
                 "me",
-                f"**WAIFU** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Não compartilhe isso em nenhum lugar!**",
+                f"**WAIFU** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Nï¿½o compartilhe isso em nenhum lugar!**",
             )
             print(
                 "Sua SESSION foi gerada. Verifique suas mensagens salvas do telegrama!"
@@ -86,14 +85,14 @@ def telethon_session():
             exit(0)
     except ApiIdInvalidError:
         print(
-            "Sua combinação API ID / API HASH é inválida. Verifique novamente.\nSaindo..."
+            "Sua combinaï¿½ï¿½o API ID / API HASH ï¿½ invï¿½lida. Verifique novamente.\nSaindo..."
         )
         exit(0)
     except ValueError:
-        print("O HASH da API não deve estar vazio! \nSaindo...")
+        print("O HASH da API nï¿½o deve estar vazio! \nSaindo...")
         exit(0)
     except PhoneNumberInvalidError:
-        print("O número de telefone é inválido!\nSaindo...")
+        print("O nï¿½mero de telefone ï¿½ invï¿½lido!\nSaindo...")
         exit(0)
 
 
@@ -113,14 +112,14 @@ def pyro_session():
 
     # generate a session
     API_ID, API_HASH = get_api_id_and_hash()
-    print("Digite o número de telefone quando solicitado.\n\n")
+    print("Digite o nï¿½mero de telefone quando solicitado.\n\n")
     with Client(":memory:", api_id=API_ID, api_hash=API_HASH) as pyro:
         ss = pyro.export_session_string()
         pyro.send_message(
             "me",
-            f"`{ss}`\n\nAcima está o seu Pyrogram Session String para o bot de música. **NÃO COMPARTILHE.**",
+            f"`{ss}`\n\nAcima estï¿½ o seu Pyrogram Session String para o bot de mï¿½sica. **Nï¿½O COMPARTILHE.**",
         )
-        print("A sessão foi enviada para suas mensagens salvas!")
+        print("A sessï¿½o foi enviada para suas mensagens salvas!")
         exit(0)
 
 
@@ -130,7 +129,7 @@ def main():
     try:
         type_of_ss = int(
             input(
-                "\nQual sessão você deseja gerar?\n1. User Session.\n2. Music Session.\n\nDigite a escolha:  "
+                "\nQual sessï¿½o vocï¿½ deseja gerar?\n1. User Session.\n2. Music Session.\n\nDigite a escolha:  "
             )
         )
     except Exception as e:

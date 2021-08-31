@@ -11,7 +11,7 @@ com_2: "`Procurando...`"
 
 # help
 help_1: "`{}` não é um plugin válido!"
-help_2: "O bot não respondeu à consulta em linha.\nConsidere `{}reiniciar`"
+help_2: "O bot não respondeu à consulta em linha.\nReinicie com `{}reiniciar`"
 help_3: "`Por favor, ative o modo inline para o seu bot em` @Botfather."
 
 # autopic
@@ -52,7 +52,7 @@ alive_1: "**{}**\n\n
 ▫ UpTime - `{}`\n
 ▫️ Tree - `{}`\n
 ◇─◇──◇────◇────◇──◇─◇"
-log: "**Heroku** Ultroid Logs.\nColado [aqui]({}) também!"
+log: "**Heroku** Waifu Logs.\nColado [aqui]({}) também!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
 usage: "**⚙️ Uso Dyno ⚙️**:\n\n-> **Dyno usado por** `{}`:\n  •  **{}h**  **{}m** |** `[{}%]`\n-> **Dyno cota de horas restantes neste mês**:\n  •  **{}h**  **{}m |** `[{}%]`\n\n**Espaço Total em Disco**: `{}`\n**Usado**: `{}`\n**Livre**: `{}`\n\n**📊 Uso de Dados 📊\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISCO**: `{}%`"
 shutdown: "Adeus {}.\n`Desligando...`"
@@ -75,7 +75,7 @@ chats_2: "`Não é possível excluir esse chat`"
 chats_3: "`Eu não sou um Admin`"
 chats_4: "#Excluído\nExcluído {}"
 chats_5: "Tornou-se [{}]({}) chefe do Grupo!"
-chats_6: "Junte-se a @fnixdev"
+chats_6: "Junte-se a @waifusu"
 
 # converter
 cvt_1: "Responder a qualquer mídia/documento."
@@ -121,17 +121,17 @@ sf_14: "SuperFBan concluído.\nFeds Totais - {}.\nExcluído - {}.\n Afetado {} f
 sf_15: "Iniciando Desban-Fed em massa..."
 sf_16: "SuperDesban-Fed Concluído.\nTotal Feds - {}.\nExcluído - {}.\n Afetado {} feds.\n#TB"
 sf_17: "`Informe a id de usuário, ou responda a mensagem de alguém para verificar seu/sua fedstat.`"
-sf_18: "Lista de feds {} foi banido em.\n\nColetados usando Ultroid."
+sf_18: "Lista de feds {} foi banido em.\n\nColetados usando Waifu."
 sf_19: "**Erro**\n `Desbloqueie` @MissRose_Bot `e tente novamente!"
 sf_20: "`Extraindo informações...`"
-sf_21: "\n\nFedInfo Extraído por Ultroid"
+sf_21: "\n\nFedInfo Extraído por Waifu"
 
 # gdrive
 gdrive_1: "`Você já autorizou com o Google Drive`"
 gdrive_2: "Clique [aqui](https://console.developers.google.com/flows/enableapi?apiid=drive) e pegue o seu `GDRIVE_CLIENT_ID` e `GDRIVE_CLIENT_SECRET`\n\nMande seu GDRIVE_CLIENT_ID e GDRIVE_CLIENT_SECRET com isso.\n`GDRIVE_CLIENT_ID GDRIVE_CLIENT_SECRET` separado por espaço."
 gdrive_3: "`Id de cliente Errado`"
 gdrive_4: "`Algo deu errado! Envie `/auth` novamente.\nSe acontecer novamente entre em contato`@TheUltroid"
-gdrive_5: "`Successo!\nVocê está pronto para usar o Google Drive com Ultroid Userbot.`"
+gdrive_5: "`Successo!\nVocê está pronto para usar o Google Drive com Waifu Userbot.`"
 gdrive_6: "`Ir para `{}` e envie ``/auth.`"
 gdrive_7: "**O upload do Arquivo No G-Drive foi bem Sucedido :**\n\n[{}]({})"
 

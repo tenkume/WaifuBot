@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
-# Ultroid - UserBot
-# Copyright (C) 2021 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# WaifuBot - UserBot
+# All Rights @TeamUltroid < https://github.com/TeamUltroid/Ultroid/ >
+# 
+# Editado por @fnixdev
 
 clear
 echo -e "\e[1m"
-echo "  _    _ _ _             _     _ "
-echo " | |  | | | |           (_)   | |"
-echo " | |  | | | |_ _ __ ___  _  __| |"
-echo " | |  | | | __| '__/ _ \| |/ _  |"
-echo " | |__| | | |_| | | (_) | | (_| |"
-echo "  \____/|_|\__|_|  \___/|_|\__,_|"
+echo "==========================================="
+echo "|             VERSION v1.0.1              |"
+echo "|              By: @fnixdev               |"
+echo "|          (C) 2021 - WaifuBot            |"
+echo "==========================================="
 echo -e "\e[0m"
 sec=5
 spinner=(⣻ ⢿ ⡿ ⣟ ⣯ ⣷)

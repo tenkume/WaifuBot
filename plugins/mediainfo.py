@@ -22,7 +22,7 @@ async def mi(e):
         return await eod(e, "`Reply to any media`")
     xx = mediainfo(r.media)
     murl = r.media.stringify()
-    url = make_html_telegraph("Mediainfo", "Ultroid", f"<code>{murl}</code>")
+    url = make_html_telegraph("Mediainfo", "Waifu", f"<code>{murl}</code>")
     ee = await eor(e, f"**[{xx}]({url})**\n\n`Loading More...`", link_preview=False)
     taime = time.time()
     if hasattr(r.media, "document"):
@@ -45,7 +45,7 @@ async def mi(e):
     else:
         naam = await r.download_media()
     out, er = await bash(f"mediainfo '{naam}' --Output=HTML")
-    urll = make_html_telegraph("Mediainfo", "Ultroid", out)
+    urll = make_html_telegraph("Mediainfo", "Waifu", out)
     if er:
         return await ee.edit(f"**[{xx}]({url})**", link_preview=False)
     await ee.edit(

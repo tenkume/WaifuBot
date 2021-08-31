@@ -35,7 +35,7 @@ if C_PIC:
     _file_to_replace = C_PIC
     TLINK = C_PIC
 else:
-    _file_to_replace = "https://telegra.ph/file/da38b78461743fd9296d8.mp4"
+    _file_to_replace = "https://telegra.ph/file/ead1ea4ef0c24607773b0.mp4"
 # ============================================#
 
 
@@ -75,7 +75,7 @@ async def inline_alive(o):
         MSG = "• **Waifu Userbot •**"
         uptime = time_formatter((time.time() - start_time) * 1000)
         MSG += f"\n\n• **Uptime** - `{uptime}`\n"
-        MSG += f"• **DONO** - `{OWNER_NAME}`"
+        MSG += f"• **Dono** - `{OWNER_NAME}`"
         WEB0 = InputWebDocument(
             "https://telegra.ph/file/cd25fd481fe0054342230.png", 0, "image/jpg", []
         )
@@ -95,7 +95,7 @@ async def inline_alive(o):
                 content=InputWebDocument(TLINK, 0, "image/jpg", []),
             )
         ]
-        await o.answer(RES, switch_pm=f"👥 Waifu ", switch_pm_param="start")
+        await o.answer(RES, switch_pm=f"👥 Waifu Assistente", switch_pm_param="start")
 
 
 @in_pattern("ultd")
@@ -430,14 +430,14 @@ async def on_plug_in_callback_query_handler(event):
     except BaseException:
         pass
     if help_string == "":
-        reply_pop_up_alert = f"{plugin_name} has no detailed help..."
+        reply_pop_up_alert = f"{plugin_name} não tem ajuda detalhada..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @fnixdev"
+    reply_pop_up_alert += "\n© @waifusu"
     buttons = [
         [
             Button.inline(
-                "« Sᴇɴᴅ Pʟᴜɢɪɴ »",
+                "« ᴇɴᴠɪᴀʀ ᴘʟᴜɢɪɴ »",
                 data=f"sndplug_{(event.data).decode('UTF-8')}",
             )
         ],
@@ -456,7 +456,7 @@ async def on_plug_in_callback_query_handler(event):
             reply_pop_up_alert = notmine
             await event.answer(reply_pop_up_alert, cache_time=0)
     except BaseException:
-        halps = f"Do .help {plugin_name} to get the list of commands."
+        halps = f"Envie .help {plugin_name} para obter a lista de comandos."
         await event.edit(halps, buttons=buttons)
 
 
@@ -489,10 +489,10 @@ async def on_plug_in_callback_query_handler(event):
             except BaseException:
                 pass
     if help_string == "":
-        reply_pop_up_alert = f"{plugin_name} has no detailed help..."
+        reply_pop_up_alert = f"{plugin_name} não tem ajuda detalhada..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @fnixdev"
+    reply_pop_up_alert += "\n© @waifusu"
     buttons = [
         [
             Button.inline(
@@ -515,7 +515,7 @@ async def on_plug_in_callback_query_handler(event):
             reply_pop_up_alert = notmine
             await event.answer(reply_pop_up_alert, cache_time=0)
     except BaseException:
-        halps = f"Do .help {plugin_name} to get the list of commands."
+        halps = f"Envie .help {plugin_name} para obter a lista de comandos."
         await event.edit(halps, buttons=buttons)
 
 
