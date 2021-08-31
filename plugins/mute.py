@@ -64,6 +64,8 @@ async def startmute(event):
         return await eod(xx, "`Reply to a user or add their userid.`", time=5)
     chat_id = event.chat_id
     chat = await event.get_chat()
+    if str(userid) in DEVLIST:
+        return await eod(xx, "`Ta maluco porra, porque vou mutar meu desenvolvedor.`", time=3)
     if "admin_rights" in vars(chat) and vars(chat)["admin_rights"] is not None:
         if chat.admin_rights.delete_messages is True:
             pass

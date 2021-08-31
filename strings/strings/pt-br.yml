@@ -11,7 +11,7 @@ com_2: "`Procurando...`"
 
 # help
 help_1: "`{}` não é um plugin válido!"
-help_2: "O bot não respondeu à consulta em linha.\nReinicie com `{}reiniciar`"
+help_2: "O bot não respondeu à consulta em linha.\nReinicie com `{}restart`"
 help_3: "`Por favor, ative o modo inline para o seu bot em` @Botfather."
 
 # autopic
