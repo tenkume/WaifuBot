@@ -6,7 +6,7 @@
 FROM programmingerror/ultroid:b0.1
 
 # set timezone
-ENV TZ=Asia/Kolkata
+ENV TZ=America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # clone the repo and change workdir
