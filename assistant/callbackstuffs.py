@@ -36,7 +36,8 @@ async def eupload(event):
         await event.edit(
             file=f"https://www.gutenberg.org/files/{match}/{match}-pdf.pdf"
         )
-    except Waifu-Book.epub"
+    except BaseException:
+        book = "Waifu-Book.epub"
         urllib.request.urlretrieve(
             "https://www.gutenberg.org/ebooks/132.epub.images", book
         )
