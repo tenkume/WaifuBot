@@ -5,13 +5,13 @@
   <b>WaifuBot - UserBot</b>
 </h1>
 
-<b>Um userbot Telegram estável + bot de música, basdeado em  Telethon.</b>   
+<b>Um userbot Telegram estï¿½vel + bot de mï¿½sica, basdeado em  Telethon.</b>   
 
 ## Deploy
 
 [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/fnixdev/SideLoad)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Ffnixdev%2FWaifuBot%2Ftree%2Fmaster&plugins=redis&envs=SESSION%2CAPI_ID%2CAPI_HASH&optionalEnvs=API_ID%2CAPI_HASH&SESSIONDesc=Your+telethon+session+string.&API_IDDesc=api_id%2C+from+my.telegram.org&API_HASHDesc=api_hash%2C+from+my.telegram.org)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/fnixdev/WaifuBot&plugins=redis&envs=SESSION%2CAPI_ID%2CAPI_HASH)
 
 
 ## Variaveis Necessarias
@@ -22,6 +22,6 @@
 - `REDIS_PASSWORD ` - Redis endpoint Password, de [redislabs](http://redislabs.com/), tutorial [aqui.](./resources/extras/redistut.md)
 
 ## Session String
-Gerador de `SESSION`:
+Gerador de String Session:
 
 * [![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://replit.com/@fnixdev/StringSessionWB)
