@@ -7,7 +7,7 @@
         "telegram",
         "userbot",
         "python",
-        "waifubot"
+        "ultroid"
     ],
     "repository": "https://github.com/fnixdev/WaifuBot/",
     "website": "https://fnixdev.github.io",
@@ -48,7 +48,7 @@
         }
     },
     "formation": {
-        "waifubot": {
+        "ultroid": {
             "quantity": 1,
             "size": "free"
         }
