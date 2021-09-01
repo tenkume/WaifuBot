@@ -36,8 +36,7 @@ async def eupload(event):
         await event.edit(
             file=f"https://www.gutenberg.org/files/{match}/{match}-pdf.pdf"
         )
-    except BaseException:
-        book = "Ultroid-Book.epub"
+    except Waifu-Book.epub"
         urllib.request.urlretrieve(
             "https://www.gutenberg.org/ebooks/132.epub.images", book
         )
@@ -105,12 +104,12 @@ async def update(eve):
             heroku_app = None
             heroku_applications = heroku.apps()
         except BaseException:
-            return await eve.edit("`Wrong HEROKU_API.`")
+            return await eve.edit("`HEROKU_API errado.`")
         for app in heroku_applications:
             if app.name == Var.HEROKU_APP_NAME:
                 heroku_app = app
         if not heroku_app:
-            await eve.edit("`Wrong HEROKU_APP_NAME.`")
+            await eve.edit("`HEROKU_APP_NAME errado.`")
             repo.__del__()
             return
         await eve.edit(
@@ -154,7 +153,7 @@ async def changes(okk):
     repo = Repo.init()
     ac_br = repo.active_branch
     changelog, tl_chnglog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
-    changelog_str = changelog + f"\n\nClick the below button to update!"
+    changelog_str = changelog + f"\n\nClique no botão abaixo para atualizar!"
     if len(changelog_str) > 1024:
         await okk.edit(get_string("upd_4"))
         await asyncio.sleep(2)
@@ -216,7 +215,7 @@ async def _(e):
         return
     if not udB.get("GDRIVE_CLIENT_ID"):
         return await e.edit(
-            "Client ID and Secret is Empty.\nFill it First.",
+            "O ID do client e o secret estão vazios.\nPreencha primeiro.",
             buttons=Button.inline("Back", data="gdrive"),
         )
     storage = await create_token_file(TOKEN_FILE, e)
@@ -225,8 +224,8 @@ async def _(e):
     token_file_data = f.read()
     udB.set("GDRIVE_TOKEN", token_file_data)
     await e.reply(
-        "`Success!\nYou are all set to use Google Drive with Ultroid Userbot.`",
-        buttons=Button.inline("Main Menu", data="setter"),
+        "`Successo!\nVocê está pronto para usar o Google Drive com Waifu Userbot.`",
+        buttons=Button.inline("ᴍᴇɴᴜ ɪɴɪᴄɪᴀʟ", data="setter"),
     )
 
 
@@ -236,20 +235,20 @@ async def _(e):
     if not e.is_private:
         return
     await e.edit(
-        "Send your FOLDER ID\n\n"
-        + "For FOLDER ID:\n"
-        + "1. Open Google Drive App.\n"
-        + "2. Create Folder.\n"
-        + "3. Make that folder public.\n"
-        + "4. Copy link of that folder.\n"
-        + "5. Send all characters which is after id= .",
+        "Envie sua FOLDER ID\n\n"
+        + "Para FOLDER ID:\n"
+        + "1. Abra Google Drive.\n"
+        + "2. Crie uma pasta.\n"
+        + "3. Altere essa pasta para publica.\n"
+        + "4. Copie o link da pasta.\n"
+        + "5. Envia todos as letras depois de id= .",
     )
     async with asst.conversation(e.sender_id) as conv:
         reply = conv.wait_event(events.NewMessage(from_users=e.sender_id))
         repl = await reply
         udB.set("GDRIVE_FOLDER_ID", repl.text)
         await repl.reply(
-            "Success Now You Can Authorise.",
+            "Sucesso, agora você pode autorizar.",
             buttons=get_back_button("gdrive"),
         )
 
@@ -265,7 +264,7 @@ async def _(e):
         repl = await reply
         udB.set("GDRIVE_CLIENT_SECRET", repl.text)
         await repl.reply(
-            "Success!\nNow You Can Authorise or add FOLDER ID.",
+            "Successo!\nAgora você pode autorizar ou adicionar FOLDER ID.",
             buttons=get_back_button("gdrive"),
         )
 
@@ -275,15 +274,15 @@ async def _(e):
 async def _(e):
     if not e.is_private:
         return
-    await e.edit("Send your CLIENT ID ending with .com")
+    await e.edit("Envie sua ID CLIENTE que termina com .com")
     async with asst.conversation(e.sender_id) as conv:
         reply = conv.wait_event(events.NewMessage(from_users=e.sender_id))
         repl = await reply
         if not repl.text.endswith(".com"):
-            return await repl.reply("`Wrong CLIENT ID`")
+            return await repl.reply("`CLIENT ID errado`")
         udB.set("GDRIVE_CLIENT_ID", repl.text)
         await repl.reply(
-            "Success now set CLIENT SECRET",
+            "Sucesso, agora defina CLIENT SECRET",
             buttons=get_back_button("gdrive"),
         )
 
@@ -294,7 +293,7 @@ async def _(e):
     if not e.is_private:
         return
     await e.edit(
-        "Go [here](https://console.developers.google.com/flows/enableapi?apiid=drive) and get your CLIENT ID and CLIENT SECRET",
+        "[Clique aqui](https://console.developers.google.com/flows/enableapi?apiid=drive) e obtenha CLIENT ID e CLIENT SECRET",
         buttons=[
             [
                 Button.inline("Cʟɪᴇɴᴛ Iᴅ", data="clientid"),
@@ -314,7 +313,7 @@ async def _(e):
 @owner
 async def otvaar(event):
     await event.edit(
-        "Other Variables to set for WaifuBot:",
+        "Outras variáveis para definir para WaifuBot:",
         buttons=[
             [
                 Button.inline("Tᴀɢ Lᴏɢɢᴇʀ", data="taglog"),
@@ -344,9 +343,9 @@ async def emoji(event):
     await event.delete()
     pru = event.sender_id
     var = "EMOJI_IN_HELP"
-    name = f"Emoji in `{HNDLR}help` menu"
+    name = f"Emoji em `{HNDLR}help` menu"
     async with event.client.conversation(pru) as conv:
-        await conv.send_message("Send emoji u want to set 🙃.\n\nUse /cancel to cancel.")
+        await conv.send_message("Enviar emoji que você deseja definir 🙃.\n\nUse /cancel para cancelar.")
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
         themssg = response.message.message
@@ -357,13 +356,13 @@ async def emoji(event):
             )
         elif themssg.startswith(("/", HNDLR)):
             return await conv.send_message(
-                "Incorrect Emoji",
+                "Emoji Incorreta",
                 buttons=get_back_button("otvars"),
             )
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                f"{name} changed to {themssg}\n",
+                f"{name} alterado para {themssg}\n",
                 buttons=get_back_button("otvars"),
             )
 
@@ -377,7 +376,7 @@ async def pluginch(event):
     name = "Plugin Channel"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "Send id or username of a channel from where u want to install all plugins\n\nOur Channel~ @ultroidplugins\n\nUse /cancel to cancel.",
+            "Enviar id ou nome de usuário de um canal de onde você deseja instalar todos os plugins\n\nNosso Canal~ @ultroidplugins\n\nUse /cancel para.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -389,13 +388,13 @@ async def pluginch(event):
             )
         elif themssg.startswith(("/", HNDLR)):
             return await conv.send_message(
-                "Incorrect channel",
+                "Canal Incorreto",
                 buttons=get_back_button("otvars"),
             )
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                "{} changed to {}\n After Setting All Things Do Restart".format(
+                "{} mudado para {}\n Depois de definir todas as coisas, reinicie".format(
                     name,
                     themssg,
                 ),
@@ -412,7 +411,7 @@ async def hndlrr(event):
     name = "Handler/ Trigger"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            f"Send The Symbol Which u want as Handler/Trigger to use bot\nUr Current Handler is [ `{HNDLR}` ]\n\n use /cancel to cancel.",
+            f"Envie o símbolo que você deseja como Handler/Trigger para usar bot\nSeu Handler atual é [ `{HNDLR}` ]\n\n use /cancel cancelar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -424,18 +423,18 @@ async def hndlrr(event):
             )
         elif len(themssg) > 1:
             return await conv.send_message(
-                "Incorrect Handler",
+                "Handler Incorreto",
                 buttons=get_back_button("otvars"),
             )
         elif themssg.startswith(("/", "#", "@")):
             return await conv.send_message(
-                "This cannot be used as handler",
+                "Isso não pode ser usado como Handler",
                 buttons=get_back_button("otvars"),
             )
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                f"{name} changed to {themssg}",
+                f"{name} mudado para {themssg}",
                 buttons=get_back_button("otvars"),
             )
 
@@ -444,7 +443,7 @@ async def hndlrr(event):
 @owner
 async def tagloggrr(e):
     await e.edit(
-        "Choose Options",
+        "Escolha uma opção",
         buttons=[
             [Button.inline("SET TAG LOG", data="settag")],
             [Button.inline("DELETE TAG LOG", data="deltag")],
@@ -469,7 +468,7 @@ async def taglogerr(event):
     name = "Tag Log Group"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            f"Make a group, add your assistant and make it admin.\nGet the `{hndlr}id` of that group and send it here for tag logs.\n\nUse /cancel to cancel.",
+            f"Faça um grupo, adicione seu assistente e torne-o administrador.\nPegue o `{hndlr}id` desse grupo e enviá-lo aqui para logs de tag.\n\nUse /cancel para cancelar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -482,7 +481,7 @@ async def taglogerr(event):
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                f"{name} changed to {themssg}",
+                f"{name} mudado para {themssg}",
                 buttons=get_back_button("taglog"),
             )
 
@@ -506,7 +505,7 @@ async def eddon(event):
     var = "ADDONS"
     await setit(event, var, "True")
     await event.edit(
-        "Done! ADDONS has been turned on!!\n\n After Setting All Things Do Restart",
+        "Feito! ADDONS foi ativado!!\n\n Depois de definir todas as coisas, reinicie",
         buttons=get_back_button("eaddon"),
     )
 
@@ -517,7 +516,7 @@ async def eddof(event):
     var = "ADDONS"
     await setit(event, var, "False")
     await event.edit(
-        "Done! ADDONS has been turned off!! After Setting All Things Do Restart",
+        "Feito! ADDONS foi desativado!! Depois de definir todas as coisas, reinicie",
         buttons=get_back_button("eaddon"),
     )
 
@@ -541,7 +540,7 @@ async def eddon(event):
     var = "SUDO"
     await setit(event, var, "True")
     await event.edit(
-        "Done! SUDO MODE has been turned on!!\n\n After Setting All Things Do Restart",
+        "Feito! SUDO MODE foi ligado!!\n\n Depois de definir todas as coisas, reinicie",
         buttons=get_back_button("sudo"),
     )
 
@@ -552,7 +551,7 @@ async def eddof(event):
     var = "SUDO"
     await setit(event, var, "False")
     await event.edit(
-        "Done! SUDO MODE has been turned off!! After Setting All Things Do Restart",
+        "Feito! SUDO MODE foi desligado!! Depois de definir todas as coisas, reinicie",
         buttons=get_back_button("sudo"),
     )
 
@@ -561,10 +560,10 @@ async def eddof(event):
 @owner
 async def sfban(event):
     await event.edit(
-        "SuperFban Settings:",
+        "SuperFban Config:",
         buttons=[
-            [Button.inline("FBᴀɴ Gʀᴏᴜᴘ", data="sfgrp")],
-            [Button.inline("Exᴄʟᴜᴅᴇ Fᴇᴅs", data="sfexf")],
+            [Button.inline("ɢʀᴜᴘᴏ ꜰʙᴀɴ", data="sfgrp")],
+            [Button.inline("ᴇxᴄʟᴜɪʀ ꜰᴇᴅs", data="sfexf")],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="otvars")],
         ],
     )
@@ -579,7 +578,7 @@ async def sfgrp(event):
     pru = event.sender_id
     async with asst.conversation(pru) as conv:
         await conv.send_message(
-            f"Make a group, add @MissRose_Bot, send `{hndlr}id`, copy that and send it here.\nUse /cancel to go back.",
+            f"Faça um grupo, adicione @MissRose_Bot, envie `{hndlr}id`, copie e envie aqui.\nUse /cancel para voltar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -606,7 +605,7 @@ async def sfexf(event):
     pru = event.sender_id
     async with asst.conversation(pru) as conv:
         await conv.send_message(
-            f"Send the Fed IDs you want to exclude in the ban. Split by a space.\neg`id1 id2 id3`\nSet is as `None` if you dont want any.\nUse /cancel to go back.",
+            f"Envie os IDs do Fed que você deseja excluir do banimento. Dividido por um espaço.\nex`id1 id2 id3`\nDefinir como `None` se você não quiser.\nUse /cancel para voltar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -619,7 +618,7 @@ async def sfexf(event):
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                f"{name} changed to {themssg}",
+                f"{name} mudado para {themssg}",
                 buttons=get_back_button("sfban"),
             )
 
@@ -644,10 +643,10 @@ async def name(event):
     await event.delete()
     pru = event.sender_id
     var = "ALIVE_TEXT"
-    name = "Alive Text"
+    name = "ᴛᴇxᴛᴏ ᴀʟɪᴠᴇ"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**Alive Text**\nEnter the new alive text.\n\nUse /cancel to terminate the operation.",
+            "**Texto Alive**\nInsira o novo texto para seu alive.\n\nUse /cancel para cancelar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -660,7 +659,7 @@ async def name(event):
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                "{} changed to {}\n\nAfter Setting All Things Do restart".format(
+                "{} mudado para {}\n\nDepois de definir todas as coisas, reinicie".format(
                     name,
                     themssg,
                 ),
@@ -677,14 +676,14 @@ async def media(event):
     name = "Alive Media"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**Alive Media**\nSend me a pic/gif/bot api id of sticker to set as alive media.\n\nUse /cancel to terminate the operation.",
+            "**Alive Midia**\nEnvie-me uma imagem/gif/código de API de bot do sicker para definir como mídia ativa.\n\nUse /cancel para cancelar.",
         )
         response = await conv.get_response()
         try:
             themssg = response.message.message
             if themssg == "/cancel":
                 return await conv.send_message(
-                    "Operation Cancelado!!",
+                    "Operação cancelada!!",
                     buttons=get_back_button("alvcstm"),
                 )
         except BaseException:
@@ -703,12 +702,12 @@ async def media(event):
                 remove(media)
             except BaseException:
                 return await conv.send_message(
-                    "Terminated.",
+                    "Terminado.",
                     buttons=get_back_button("alvcstm"),
                 )
         await setit(event, var, url)
         await conv.send_message(
-            f"{name} has been set.",
+            f"{name} foi definido.",
             buttons=get_back_button("alvcstm"),
         )
 
@@ -721,7 +720,7 @@ async def dell(event):
         return await event.edit("Done!", buttons=get_back_button("alvcstm"))
     except BaseException:
         return await event.edit(
-            "Something went wrong...",
+            "Algo deu errado...",
             buttons=get_back_button("alvcstm"),
         )
 
@@ -730,21 +729,21 @@ async def dell(event):
 @owner
 async def alvcs(event):
     await event.edit(
-        "Customise your PMPERMIT Settings -",
+        "Customise suas configs de PMPERMIT -",
         buttons=[
             [
-                Button.inline("Pᴍ Tᴇxᴛ", data="pmtxt"),
-                Button.inline("Pᴍ Mᴇᴅɪᴀ", data="pmmed"),
+                Button.inline("ᴛᴇxᴛᴏ ᴘᴍ", data="pmtxt"),
+                Button.inline("ᴘᴍ ᴍɪᴅɪᴀ", data="pmmed"),
             ],
             [
-                Button.inline("Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ", data="apauto"),
-                Button.inline("PMLOGGER", data="pml"),
+                Button.inline("ᴀᴜᴛᴏ ᴀᴘʀᴏᴠᴀʀ", data="apauto"),
+                Button.inline("ʟᴏɢ ᴘᴍ", data="pml"),
             ],
             [
-                Button.inline("Sᴇᴛ Wᴀʀɴs", data="swarn"),
-                Button.inline("Dᴇʟᴇᴛᴇ Pᴍ Mᴇᴅɪᴀ", data="delpmmed"),
+                Button.inline("ᴅᴇꜰɪɴɪʀ ᴀᴠɪsᴏs", data="swarn"),
+                Button.inline("ᴅᴇʟᴇᴛᴇ ᴘᴍ ᴍɪᴅɪᴀ", data="delpmmed"),
             ],
-            [Button.inline("PMPermit Type", data="pmtype")],
+            [Button.inline("ᴛɪᴘᴏ ᴅᴇ ᴘᴍᴘᴇʀᴍɪᴛ", data="pmtype")],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="ppmset")],
         ],
     )
@@ -754,10 +753,10 @@ async def alvcs(event):
 @owner
 async def pmtyp(event):
     await event.edit(
-        "Select the type of PMPermit needed.",
+        "Selecione o tipo de PMPermit.",
         buttons=[
-            [Button.inline("Inline", data="inpm_in")],
-            [Button.inline("Normal", data="inpm_no")],
+            [Button.inline("ɪɴʟɪɴᴇ", data="inpm_in")],
+            [Button.inline("ɴᴏʀᴍᴀʟ", data="inpm_no")],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmcstm")],
         ],
     )
@@ -769,7 +768,7 @@ async def inl_on(event):
     var = "INLINE_PM"
     await setit(event, var, "True")
     await event.edit(
-        f"Done!! PMPermit type has been set to inline!",
+        f"Feito!! O tipo de PMPermit foi definido como inline!",
         buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmtype")]],
     )
 
@@ -780,7 +779,7 @@ async def inl_on(event):
     var = "INLINE_PM"
     await setit(event, var, "False")
     await event.edit(
-        f"Done!! PMPermit type has been set to normal!",
+        f"Feito!! O tipo de PMPermit foi definido como normal!",
         buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmtype")]],
     )
 
@@ -794,7 +793,7 @@ async def name(event):
     name = "PM Text"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**PM Text**\nEnter the new Pmpermit text.\n\nu can use `{name}` `{fullname}` `{count}` `{mention}` `{username}` to get this from user Too\n\nUse /cancel to terminate the operation.",
+            "**Texto PM**\nInsira o novo texto para o pmpermit.\n\nVocê pode usar `{name}` `{fullname}` `{count}` `{mention}` `{username}` para obter isso do usuário também\n\nUse /cancel para cancelar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -807,12 +806,12 @@ async def name(event):
         else:
             if len(themssg) > 4090:
                 return await conv.send_message(
-                    "Message too long!\nGive a shorter message please!!",
+                    "Mensagem muito longa!\nEmvie uma mensagem mais curta!!",
                     buttons=get_back_button("pmcstm"),
                 )
             await setit(event, var, themssg)
             await conv.send_message(
-                "{} changed to {}\n\nAfter Setting All Things Do restart".format(
+                "{} mudado para {}\n\nDepois de definir todas as coisas, reinicie".format(
                     name,
                     themssg,
                 ),
@@ -828,7 +827,7 @@ async def name(event):
     lst = list(zip(tultd[::3], tultd[1::3], tultd[2::3]))
     lst.append([Button.inline("« ᴠᴏʟᴛᴀʀ", data="pmcstm")])
     await event.edit(
-        "Select the number of warnings for a user before getting blocked in PMs.",
+        "Selecione o número de avisos para um usuário antes de ser bloqueado em PMs.",
         buttons=lst,
     )
 
@@ -840,12 +839,12 @@ async def set_wrns(event):
     dn = udB.set("PMWARNS", value)
     if dn:
         await event.edit(
-            f"PM Warns Set to {value}.\nNew users will have {value} chances in PMs before getting banned.",
+            f"PM Avisos definido para {value}.\nNovos usuarios tem {value} chances em PMs antes de ser banido.",
             buttons=get_back_button("pmcstm"),
         )
     else:
         await event.edit(
-            f"Something went wrong, please check your {hndlr}logs!",
+            f"Algo deu errado, por favor, verifique seu {hndlr}logs!",
             buttons=get_back_button("pmcstm"),
         )
 
@@ -859,14 +858,14 @@ async def media(event):
     name = "PM Media"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**PM Media**\nSend me a pic/gif/ or link  to set as pmpermit media.\n\nUse /cancel to terminate the operation.",
+            "**PM Midia**\nEnvie-me uma foto/gif/link para definir como mídia de pmpermit.\n\nUse /cancel para cancelar.",
         )
         response = await conv.get_response()
         try:
             themssg = response.message.message
             if themssg == "/cancel":
                 return await conv.send_message(
-                    "Operation Cancelado!!",
+                    "Operação cancelada!!",
                     buttons=get_back_button("pmcstm"),
                 )
         except BaseException:
@@ -885,12 +884,12 @@ async def media(event):
                 remove(media)
             except BaseException:
                 return await conv.send_message(
-                    "Terminated.",
+                    "Terminado.",
                     buttons=get_back_button("pmcstm"),
                 )
         await setit(event, var, url)
         await conv.send_message(
-            f"{name} has been set.",
+            f"{name} foi definido.",
             buttons=get_back_button("pmcstm"),
         )
 
@@ -912,7 +911,7 @@ async def dell(event):
 @owner
 async def apauto(event):
     await event.edit(
-        "This'll auto approve on outgoing messages",
+        "Isso vai aprovar automaticamente as mensagens enviadas",
         buttons=[
             [Button.inline("Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ ON", data="apon")],
             [Button.inline("Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ OFF", data="apof")],
@@ -927,7 +926,7 @@ async def apon(event):
     var = "AUTOAPPROVE"
     await setit(event, var, "True")
     await event.edit(
-        f"Done!! AUTOAPPROVE  Started!!",
+        f"Feito!! AUTOAPROVE  Iniciado!!",
         buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="apauto")]],
     )
 
@@ -938,12 +937,12 @@ async def apof(event):
     try:
         udB.delete("AUTOAPPROVE")
         return await event.edit(
-            "Done! AUTOAPPROVE Stopped!!",
+            "Feito! AUTOAPROVE Desativado!!",
             buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="apauto")]],
         )
     except BaseException:
         return await event.edit(
-            "Something went wrong...",
+            "Algo deu errado...",
             buttons=[[Button.inline("« Sᴇᴛᴛɪɴɢs", data="setter")]],
         )
 
@@ -952,7 +951,7 @@ async def apof(event):
 @owner
 async def alvcs(event):
     await event.edit(
-        "PMLOGGER This Will Forward Ur Pm to Ur Private Group -",
+        "PMLOGGER Isso encaminhará seu PM para seu grupo privado -",
         buttons=[
             [Button.inline("PMLOGGER ON", data="pmlog")],
             [Button.inline("PMLOGGER OFF", data="pmlogof")],
@@ -967,7 +966,7 @@ async def pmlog(event):
     var = "PMLOG"
     await setit(event, var, "True")
     await event.edit(
-        f"Done!! PMLOGGER  Started!!",
+        f"Feito!! PMLOGGER  Iniciado!!",
         buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pml")]],
     )
 
@@ -978,7 +977,7 @@ async def pmlogof(event):
     try:
         udB.delete("PMLOG")
         return await event.edit(
-            "Done! PMLOGGER Stopped!!",
+            "Feito! PMLOGGER Desativado!!",
             buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="pml")]],
         )
     except BaseException:
@@ -992,11 +991,11 @@ async def pmlogof(event):
 @owner
 async def pmset(event):
     await event.edit(
-        "PMPermit Settings:",
+        "PMPermit config:",
         buttons=[
-            [Button.inline("Tᴜʀɴ PMPᴇʀᴍɪᴛ Oɴ", data="pmon")],
-            [Button.inline("Tᴜʀɴ PMPᴇʀᴍɪᴛ Oғғ", data="pmoff")],
-            [Button.inline("Cᴜsᴛᴏᴍɪᴢᴇ PMPᴇʀᴍɪᴛ", data="pmcstm")],
+            [Button.inline("ᴀᴛɪᴠᴀʀ ᴘᴍᴘᴇʀᴍɪᴛ", data="pmon")],
+            [Button.inline("ᴅᴇsᴀᴛɪᴠᴀʀ ᴘᴍᴘᴇʀᴍɪᴛ", data="pmoff")],
+            [Button.inline("ᴄᴜsᴛᴏᴍɪᴢᴀʀ ᴘᴍᴘᴇʀᴍɪᴛ", data="pmcstm")],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
     )
@@ -1008,7 +1007,7 @@ async def pmonn(event):
     var = "PMSETTING"
     await setit(event, var, "True")
     await event.edit(
-        f"Done! PMPermit has been turned on!!",
+        f"Feito! PMPermit foi ativado!!",
         buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="ppmset")]],
     )
 
@@ -1019,7 +1018,7 @@ async def pmofff(event):
     var = "PMSETTING"
     await setit(event, var, "False")
     await event.edit(
-        f"Done! PMPermit has been turned off!!",
+        f"Feito! PMPermit foi desativado!!",
         buttons=[[Button.inline("« ᴠᴏʟᴛᴀʀ", data="ppmset")]],
     )
 
@@ -1028,11 +1027,11 @@ async def pmofff(event):
 @owner
 async def chbot(event):
     await event.edit(
-        f"From This Feature U can chat with ppls Via ur Assistant Bot.\n[More info](https://t.me/UltroidUpdates/2)",
+        f"Neste recurso, você pode conversar com as pessoas através do seu bot assistente.\n[Mais Informações](https://t.me/UltroidUpdates/2)",
         buttons=[
-            [Button.inline("Cʜᴀᴛ Bᴏᴛ  Oɴ", data="onchbot")],
-            [Button.inline("Cʜᴀᴛ Bᴏᴛ  Oғғ", data="ofchbot")],
-            [Button.inline("Bᴏᴛ Wᴇʟᴄᴏᴍᴇ", data="bwel")],
+            [Button.inline("ᴀᴛɪᴠᴀʀ ᴄʜᴀᴛ ʙᴏᴛ", data="onchbot")],
+            [Button.inline("ᴅᴇsᴀᴛɪᴠᴀʀ ᴄʜᴀᴛ ʙᴏᴛ", data="ofchbot")],
+            [Button.inline("ʙᴏᴀs ᴠɪɴᴅᴀs", data="bwel")],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
         ],
         link_preview=False,
@@ -1045,10 +1044,10 @@ async def name(event):
     await event.delete()
     pru = event.sender_id
     var = "STARTMSG"
-    name = "Bot Welcome Message:"
+    name = "Mensagem de boas-vindas do bot:"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**BOT WELCOME MSG**\nEnter the msg which u want to show when someone start your assistant Bot.\nYou Can use `{me}` , `{mention}` Parameters Too\nUse /cancel to terminate the operation.",
+            "**Mensagem de Boas-Vindas**\nDigite a mensagem que você deseja mostrar quando alguém iniciar o seu Bot assistente.\nVocê pode usar `{me}` , `{mention}` \nUse /cancel para cancelar.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -1061,7 +1060,7 @@ async def name(event):
         else:
             await setit(event, var, themssg)
             await conv.send_message(
-                "{} changed to {}".format(
+                "{} mudado para {}".format(
                     name,
                     themssg,
                 ),
@@ -1075,7 +1074,7 @@ async def chon(event):
     var = "PMBOT"
     await setit(event, var, "True")
     await event.edit(
-        "Done! Now u Can Chat With People Via This Bot",
+        "Feito! Agora você pode conversar com pessoas através deste bot",
         buttons=[Button.inline("« ᴠᴏʟᴛᴀʀ", data="chatbot")],
     )
 
@@ -1086,7 +1085,7 @@ async def chon(event):
     var = "PMBOT"
     await setit(event, var, "False")
     await event.edit(
-        "Done! Chat People Via This Bot Stopped.",
+        "Feito! Chat Bot foi desativado.",
         buttons=[Button.inline("« ᴠᴏʟᴛᴀʀ", data="chatbot")],
     )
 
@@ -1095,7 +1094,7 @@ async def chon(event):
 @owner
 async def vcb(event):
     await event.edit(
-        f"From This Feature U can play songs in group voice chat\n\n[moreinfo](https://t.me/UltroidUpdates/4)",
+        f"Com este recurso, VOCÊ pode tocar músicas no chat de voz em grupo\n\n[mais informações](https://t.me/UltroidUpdates/4)",
         buttons=[
             [Button.inline("VC Sᴇssɪᴏɴ", data="vcs")],
             [Button.inline("« ᴠᴏʟᴛᴀʀ", data="setter")],
@@ -1143,14 +1142,14 @@ async def media(event):
     name = "Inline Media"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**Inline Media**\nSend me a pic/gif/ or link  to set as inline media.\n\nUse /cancel to terminate the operation.",
+            "**Inline Midia**\nEnvie-me uma foto/gif/link para definir como mídia inline.\n\nUse /cancel para cancelar.",
         )
         response = await conv.get_response()
         try:
             themssg = response.message.message
             if themssg == "/cancel":
                 return await conv.send_message(
-                    "Operation Cancelado!!",
+                    "Operação cancelada!!",
                     buttons=get_back_button("setter"),
                 )
         except BaseException:
@@ -1169,11 +1168,11 @@ async def media(event):
                 remove(media)
             except BaseException:
                 return await conv.send_message(
-                    "Terminated.",
+                    "Terminado.",
                     buttons=get_back_button("setter"),
                 )
         await setit(event, var, url)
         await conv.send_message(
-            f"{name} has been set.",
+            f"{name} foi definido.",
             buttons=get_back_button("setter"),
         )
