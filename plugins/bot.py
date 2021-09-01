@@ -44,7 +44,7 @@ from . import *
 async def lol(ult):
     pic = udB.get("ALIVE_PIC")
     uptime = time_formatter((time.time() - start_time) * 1000)
-    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Eʀʀᴀʀ ᴇ́ ʜᴜᴍᴀɴᴏ, ʙᴏᴛᴀʀ ᴀ ᴄᴜʟᴘᴀ ᴇᴍ ᴀʟɢᴜᴇᴍ ᴇ́ ᴇsᴛʀᴀᴛᴇɢɪᴀ"
+    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "`Yᴇs sɪʀ ! ɪ'ᴍ ᴀʟɪᴠᴇ`"
     y = Repo().active_branch
     xx = Repo().remotes[0].config_reader.get("url")
     rep = xx.replace(".git", f"/tree/{y}")

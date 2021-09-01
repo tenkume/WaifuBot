@@ -47,12 +47,13 @@ afk_7: "Currently AFK with reason {}"
 afk_8: "Currently AFK."
 
 # bot
-alive_1: "**{}**\n\n
+alive_1: "Wᴀɪꜰᴜ, ᴋᴀᴡᴀɪɪ ᴜsᴇʀʙᴏᴛ\n\n
+**{}**\n\n
 ◇─◇──◇────◇────◇──◇─◇\n
-▫️ Owner - `{}`\n
-▫️ Version - `{}`\n
-▫ UpTime - `{}`\n
-▫️ Branch - `{}`\n
+▫️ ᴏᴡɴᴇʀ - `{}`\n
+▫️ ᴠᴇʀsɪᴏɴ - `{}`\n
+▫ ᴜᴘᴛɪᴍᴇ - `{}`\n
+▫️ ᴛʀᴇᴇ - `{}`\n
 ◇─◇──◇────◇────◇──◇─◇"
 log: "**Heroku** Waifu Logs.\nPasted [here]({}) too!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
