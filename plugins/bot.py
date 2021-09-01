@@ -44,7 +44,7 @@ from . import *
 async def lol(ult):
     pic = udB.get("ALIVE_PIC")
     uptime = time_formatter((time.time() - start_time) * 1000)
-    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Wᴀɪꜰᴜ, ᴋᴀᴡᴀɪɪ ᴜsᴇʀʙᴏᴛ"
+    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Eʀʀᴀʀ ᴇ́ ʜᴜᴍᴀɴᴏ, ʙᴏᴛᴀʀ ᴀ ᴄᴜʟᴘᴀ ᴇᴍ ᴀʟɢᴜᴇᴍ ᴇ́ ᴇsᴛʀᴀᴛᴇɢɪᴀ"
     y = Repo().active_branch
     xx = Repo().remotes[0].config_reader.get("url")
     rep = xx.replace(".git", f"/tree/{y}")
@@ -98,7 +98,7 @@ async def cmds(event):
     pattern="restart$",
 )
 async def restartbt(ult):
-    ok = await eor(ult, "`Restarting...`")
+    ok = await eor(ult, "`Reiniciand...`")
     if Var.HEROKU_API:
         await restart(ok)
     else:

@@ -231,44 +231,20 @@ async def _(e):
                 same_peer=True,
             ),
             Button.switch_inline(
-                "Aᴘᴘs Mᴏᴅs",
-                query="mods minecraft",
-                same_peer=True,
-            ),
-        ],
-        [
-            Button.switch_inline(
                 "Pʀᴏᴄᴜʀᴀʀ ɴᴏ Gᴏᴏɢʟᴇ",
-                query="WaifuBot github",
-                same_peer=True,
-            ),
-            Button.switch_inline(
-                "Pʀᴏᴄᴜʀᴀʀ ɴᴏ Yᴀʜᴏᴏ",
-                query="yahoo WaifuBot",
+                query="WaifuBot Userbot github",
                 same_peer=True,
             ),
         ],
         [
             Button.switch_inline(
-                "WʜɪSᴘᴇʀ",
-                query="msg username wspr Hello",
+                "OʀᴀɴɢᴇFᴏx",
+                query="ofox beryllium",
                 same_peer=True,
             ),
             Button.switch_inline(
                 "YᴏᴜTᴜʙᴇ",
                 query="yt 1nonly stay with me",
-                same_peer=True,
-            ),
-        ],
-        [
-            Button.switch_inline(
-                "EBᴏᴏᴋs Uᴘʟᴏᴀᴅᴇʀ",
-                query="ebooks India",
-                same_peer=True,
-            ),
-            Button.switch_inline(
-                "OʀᴀɴɢᴇFᴏx🦊",
-                query="ofox beryllium",
                 same_peer=True,
             ),
         ],

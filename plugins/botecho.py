@@ -6,8 +6,8 @@
 """
 ✘ Comandos Disponiveis -
 
-• `{i}botecho text (optional -\n[button_text_1](https://t.me/TheUltroid)\n[button_text_2](https://t.me/TeamUltroid))`
-   Send a message from your assistant bot.
+• `{i}botecho text (optional -\n[Waifu Updates](https://t.me/waifusu)\n[Suporte](https://t.me/fnixdev))`
+   Envie uma mensagem do seu bot assistente.
 """
 
 import re
@@ -46,13 +46,13 @@ async def button_parser(event):
     except IndexError:
         return await eor(
             event,
-            f"**Please give some text!**\n**Format:** `{hndlr}botecho text \n[button_text_1](https://t.me/TheUltroid)\n[button_text_2](https://t.me/TeamUltroid)`",
+            f"**Eu preciso de algum texto!**\n**Formato:** `{hndlr}botecho texto \n[Waifu Updates](https://t.me/waifusu)\n[Suporte](https://t.me/fnixdev)`",
         )
     text, buttons = generate_url_button(text)
     try:
         if text is None:
-            return await eor(event, "`Please provide a text too!`")
+            return await eor(event, "`Forneça um texto também!`")
         await asst.send_message(event.chat_id, text, buttons=buttons)
-        await eor(event, "Done. Message sent.")
+        await eor(event, "Feito. Mensagem enviada.")
     except Exception as e:
         await eod(event, "**ERROR:**\n{}".format(str(e)), time=5)
