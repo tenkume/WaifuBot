@@ -56,6 +56,7 @@ alive_1: "Wᴀɪꜰᴜ, ᴋᴀᴡᴀɪɪ ᴜsᴇʀʙᴏᴛ\n\n
 log: "**Heroku** Waifu Logs.\nColado [aqui]({}) também!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
 usage: "**⚙️ Uso Dyno ⚙️**:\n\n-> **Dyno usado por** `{}`:\n  •  **{}h**  **{}m** |** `[{}%]`\n-> **Dyno cota de horas restantes neste mês**:\n  •  **{}h**  **{}m |** `[{}%]`\n\n**Espaço Total em Disco**: `{}`\n**Usado**: `{}`\n**Livre**: `{}`\n\n**📊 Uso de Dados 📊\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISCO**: `{}%`"
+usage_simple: "**Espaço Total em Disco**: `{}`\n**Usado**: `{}`\n**Livre**: `{}`\n\n**📊 Uso de Dados 📊\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISCO**: `{}%`"
 shutdown: "Adeus {}.\n`Desligando...`"
 
 # broadcast

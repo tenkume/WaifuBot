@@ -98,7 +98,7 @@ async def cmds(event):
     pattern="restart$",
 )
 async def restartbt(ult):
-    ok = await eor(ult, "`Reiniciand...`")
+    ok = await eor(ult, "`Reiniciando...`")
     if Var.HEROKU_API:
         await restart(ok)
     else:
