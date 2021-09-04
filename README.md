@@ -9,10 +9,9 @@
 
 ## Deploy
 
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/fnixdev/SideLoad)
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/fnixdev/WLoader)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/fnixdev/WaifuBot&plugins=redis&envs=SESSION%2CAPI_ID%2CAPI_HASH)
-
 
 ## Variaveis Necessarias
 - `API_ID` - Sua API_ID de [my.telegram.org](https://my.telegram.org/)
