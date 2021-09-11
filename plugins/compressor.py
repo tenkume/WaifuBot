@@ -155,7 +155,7 @@ async def _(e):
                 await e.client.send_file(
                     e.chat_id,
                     mmmm,
-                    thumb="resources/extras/waifu.png",
+                    thumb="resources/extras/ultroid.jpg",
                     caption=caption,
                     attributes=attributes,
                     force_document=False,
@@ -165,7 +165,7 @@ async def _(e):
                 await e.client.send_file(
                     e.chat_id,
                     mmmm,
-                    thumb="resources/extras/waifu.png",
+                    thumb="resources/extras/ultroid.jpg",
                     caption=caption,
                     force_document=True,
                     reply_to=e.reply_to_msg_id,

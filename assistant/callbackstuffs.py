@@ -42,7 +42,7 @@ async def eupload(event):
             "https://www.gutenberg.org/ebooks/132.epub.images", book
         )
         fn, media, _ = await asst._file_to_media(
-            book, thumb="resources/extras/waifu.png"
+            book, thumb="resources/extras/ultroid.jpg"
         )
         await event.edit(file=media)
         remove(book)

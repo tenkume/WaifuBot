@@ -37,7 +37,7 @@ async def cd(e):
         return await eod(e, "`Give Some Text or Reply")
     kk = await eor(e, "`processing`")
     pfp = await e.client.get_profile_photos(ultroid_bot.uid)
-    img = "resources/extras/waifusu.jpg"
+    img = "resources/extras/teamultroid.jpg"
     if len(pfp) >= 1:
         img = await e.client.download_media(pfp[0])
     ok = Image.open(img)

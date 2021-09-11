@@ -49,7 +49,7 @@ async def zipp(event):
         event.chat_id,
         xxx,
         force_document=True,
-        thumb="resources/extras/waifu.png",
+        thumb="resources/extras/ultroid.jpg",
         caption=f"`{xxx.name}`",
         reply_to=reply,
     )
@@ -94,7 +94,7 @@ async def unzipp(event):
             event.chat_id,
             xxx,
             force_document=True,
-            thumb="resources/extras/waifu.png",
+            thumb="resources/extras/ultroid.jpg",
             caption=f"`{xxx.name}`",
         )
     await xx.delete()
@@ -138,7 +138,7 @@ async def do_zip(event):
         event.chat_id,
         xxx,
         force_document=True,
-        thumb="resources/extras/waifu.png",
+        thumb="resources/extras/ultroid.jpg",
     )
     os.system("rm -rf zip")
     os.remove("ultroid.zip")

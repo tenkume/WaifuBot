@@ -181,7 +181,7 @@ async def _(e):
             thumb = "img.png"
             os.remove(bbbb)
         except TypeError:
-            bbbb = "resources/extras/waifu.png"
+            bbbb = "resources/extras/ultroid.jpg"
             im = cv2.imread(bbbb)
             dsize = (320, 320)
             output = cv2.resize(im, dsize, interpolation=cv2.INTER_AREA)
@@ -223,7 +223,7 @@ async def _(e):
             e.chat_id,
             c,
             video_note=True,
-            thumb="resources/extras/waifu.png",
+            thumb="resources/extras/ultroid.jpg",
             reply_to=a,
         )
         await z.delete()
