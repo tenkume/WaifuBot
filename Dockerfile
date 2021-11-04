@@ -5,6 +5,8 @@
 
 FROM programmingerror/ultroid:b0.1
 
+RUN rm -r /root/fnixdev/
+
 # set timezone
 ENV TZ=America/Sao_Paulo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
