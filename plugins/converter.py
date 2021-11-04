@@ -57,7 +57,7 @@ async def _(e):
     os.remove(dl)
     nn = "https://telegra.ph" + variable[0]
     udB.set("CUSTOM_THUMBNAIL", str(nn))
-    await bash(f"wget {nn} -O resources/extras/ultroid.jpg")
+    await bash(f"wget {nn} -O resources/extras/kanna.jpg")
     await eor(e, f"Added [This]({nn}) As Your Custom Thumbnail", link_preview=False)
 
 
@@ -91,7 +91,7 @@ async def imak(event):
         f"`{xxx.name}`",
         file=xxx,
         force_document=True,
-        thumb="resources/extras/ultroid.jpg",
+        thumb="resources/extras/kanna.jpg",
     )
     os.remove(inp)
     await xx.delete()
@@ -162,7 +162,7 @@ async def _(event):
             b.write(str(a.message))
             b.close()
             await xx.edit(f"**Packing into** `{input_str}`")
-            await event.reply(file=input_str, thumb="resources/extras/ultroid.jpg")
+            await event.reply(file=input_str, thumb="resources/extras/kanna.jpg")
             await xx.delete()
             os.remove(input_str)
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./resources/extras/ultroid.jpg" width="400" height="400"/>
+  <img src="./resources/extras/kanna.jpg" width="400" height="400"/>
 </p>
 <h1 align="center">
   <b>WaifuBot - UserBot</b>
