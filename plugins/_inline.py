@@ -61,7 +61,7 @@ SUP_BUTTONS = [
         Button.url("ʀᴇᴘᴏ", url="https://github.com/fnixdev/WaifuBot"),
         Button.url("ᴀᴅᴅᴏɴs", url="https://github.com/fnixdev/WaifuAddons"),
     ],
-    [Button.url("sᴜᴘᴏʀᴛᴇ", url="t.me/waifusu")],
+    [Button.url("sᴜᴘᴏʀᴛᴇ", url="t.me/fnixsup")],
 ]
 
 # --------------------BUTTONS--------------------#
@@ -409,7 +409,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} não tem ajuda detalhada..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @waifusu"
+    reply_pop_up_alert += "\n© @fnixsup"
     buttons = [
         [
             Button.inline(
@@ -468,7 +468,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} não tem ajuda detalhada..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @waifusu"
+    reply_pop_up_alert += "\n© @fnixsup"
     buttons = [
         [
             Button.inline(

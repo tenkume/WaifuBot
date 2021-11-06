@@ -11,7 +11,7 @@ REPOMSG = """
 • **Waifu Userbot** •\n
 • Repo - [Clique Aqui](https://github.com/fnixdev/WaifuBot)
 • Addons - [Clique Aqui](https://github.com/fnixdev/WaifuAddons)
-• Suporte - @waifusu
+• Suporte - @fnixsup
 """
 
 

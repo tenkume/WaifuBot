@@ -21,7 +21,7 @@ Owner_info_msg = f"""
 
 <strong>Encaminhamento de mensagens</strong> - {udB.get("PMBOT")}
 
-<stong><a href=https://t.me/waifusu/>[WaifuBot]</a>, kang by @fnixdev</strong>
+<stong><a href=https://t.me/fnixsup/>[WaifuBot]</a>, kang by @fnixdev</strong>
 """
 
 _settings = [

@@ -22,9 +22,9 @@ autopic_2: "No Results found for `{}`"
 autopic_3: "Got a Collection `{}` related to your search !\nStarting Autopic !"
 
 # inline
-inline_1: "[ᴡᴀɪꜰᴜ Sᴜᴘᴘᴏʀᴛ](t.me/waifusu)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nPʟᴜɢɪɴs ~ {}**"
-inline_2: "[ᴡᴀɪꜰᴜ Sᴜᴘᴘᴏʀᴛ](t.me/waifusu)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}**"
-inline_3: "[ᴡᴀɪꜰᴜ Sᴜᴘᴘᴏʀᴛ](t.me/waifusu)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}\n\nDᴏ **`.setredis ADDONS True`** ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛᴏ ɢᴇᴛ ᴀᴅᴅᴏɴs.**"
+inline_1: "[ᴡᴀɪꜰᴜ Sᴜᴘᴘᴏʀᴛ](t.me/fnixsup)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nPʟᴜɢɪɴs ~ {}**"
+inline_2: "[ᴡᴀɪꜰᴜ Sᴜᴘᴘᴏʀᴛ](t.me/fnixsup)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}**"
+inline_3: "[ᴡᴀɪꜰᴜ Sᴜᴘᴘᴏʀᴛ](t.me/fnixsup)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}\n\nDᴏ **`.setredis ADDONS True`** ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛᴏ ɢᴇᴛ ᴀᴅᴅᴏɴs.**"
 inline_4: "**ᴍᴀɪɴ ᴍᴇɴᴜ\n\nᴘʟᴜɢɪɴs [{}] ~ ᴀᴅᴅᴏɴs [{}]\nᴛᴏᴛᴀʟ ᴄᴏᴍᴍᴀɴᴅs [{}]**"
 inline_5: "**Mᴇɴᴜ Hᴀs Bᴇᴇɴ Cʟᴏsᴇᴅ**"
 
@@ -79,7 +79,7 @@ chats_2: "`Cant delete this chat`"
 chats_3: "`I m not an admin`"
 chats_4: "#Deleted\nDeleted {}"
 chats_5: "Your [{}]({}) Group Made Boss!"
-chats_6: "Join @waifusu"
+chats_6: "Join @fnixsup"
 
 # converter
 cvt_1: "Reply to any media/Document."

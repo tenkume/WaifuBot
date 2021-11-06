@@ -6,7 +6,7 @@
 """
 ✘ Comandos Disponiveis -
 
-• `{i}botecho text (optional -\n[Waifu Updates](https://t.me/waifusu)\n[Suporte](https://t.me/fnixdev))`
+• `{i}botecho text (optional -\n[Waifu Updates](https://t.me/fnixsup)\n[Suporte](https://t.me/fnixdev))`
    Envie uma mensagem do seu bot assistente.
 """
 
@@ -46,7 +46,7 @@ async def button_parser(event):
     except IndexError:
         return await eor(
             event,
-            f"**Eu preciso de algum texto!**\n**Formato:** `{hndlr}botecho texto \n[Waifu Updates](https://t.me/waifusu)\n[Suporte](https://t.me/fnixdev)`",
+            f"**Eu preciso de algum texto!**\n**Formato:** `{hndlr}botecho texto \n[Waifu Updates](https://t.me/fnixsup)\n[Suporte](https://t.me/fnixdev)`",
         )
     text, buttons = generate_url_button(text)
     try:
